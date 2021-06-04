@@ -21,6 +21,7 @@ class DemoController {
     private val logger = LoggerFactory.getLogger(this::class.java)
 
     @GetMapping
+    @LogExecutionTime
     fun get() {
         logger.info("Hello DemoApp")
     }
