@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <finalName>${project.artifactId}</finalName>
     </properties>
 
     <dependencies>
@@ -52,6 +53,7 @@
     </dependencies>
 
     <build>
+        <finalName>${finalName}</finalName>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
         <plugins>
